@@ -36,7 +36,7 @@ public class post_class {
             DefaultTableModel model = (DefaultTableModel) table.getModel();
             if(rs.next()){
                 
-                model.addRow(new Object[]{rs.getString("prdct_id"),1 ,rs.getString("prdct_name"),rs.getString("prdct_quantity"), rs.getString("prdct_price")});
+                model.addRow(new Object[]{rs.getString("prdct_id"),1 ,rs.getString("prdct_name"),rs.getString("prdct_price"), rs.getString("prdct_price")});
             }else{
                 JOptionPane.showMessageDialog(table, "No Product on database");
             }     

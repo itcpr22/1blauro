@@ -101,13 +101,24 @@ public class POS extends javax.swing.JFrame {
                 bcActionPerformed(evt);
             }
         });
+        bc.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                bcKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                bcKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                bcKeyTyped(evt);
+            }
+        });
 
         pstable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "ID", "SHOES NAME", "QUANTITY", "PRICE", "STATUS"
+                "ID", "QUANTITY", "SHOES NAME", "PRICE", "Sub total"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -242,6 +253,51 @@ public class POS extends javax.swing.JFrame {
         double v = t * 0.12;
         vt.setValue(v);        // TODO add your handling code here:
     }//GEN-LAST:event_bcActionPerformed
+
+    private void bcKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bcKeyTyped
+//    String bar = bc.getText();
+//
+//        int be = checkProduct(bar);
+//
+//        if(be!=1){
+//            posf.getProduct(bar, pstable);
+//        }
+//
+//        double t = total();
+//        tt.setValue(t);
+//        double v = t * 0.12;
+//        vt.setValue(v);    // TODO add your handling code here:
+    }//GEN-LAST:event_bcKeyTyped
+
+    private void bcKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bcKeyReleased
+//String bar = bc.getText();
+//
+//        int be = checkProduct(bar);
+//
+//        if(be!=1){
+//            posf.getProduct(bar, pstable);
+//        }
+//
+//        double t = total();
+//        tt.setValue(t);
+//        double v = t * 0.12;
+//        vt.setValue(v);        // TODO add your handling code here:
+    }//GEN-LAST:event_bcKeyReleased
+
+    private void bcKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bcKeyPressed
+//String bar = bc.getText();
+//
+//        int be = checkProduct(bar);
+//
+//        if(be!=1){
+//            posf.getProduct(bar, pstable);
+//        }
+//
+//        double t = total();
+//        tt.setValue(t);
+//        double v = t * 0.12;
+//        vt.setValue(v);        // TODO add your handling code here:
+    }//GEN-LAST:event_bcKeyPressed
 
     /**
      * @param args the command line arguments
